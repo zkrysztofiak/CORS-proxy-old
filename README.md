@@ -42,22 +42,8 @@ _URL shortener_ is a web application that allows shortening links
 
 #### Technical decomposition / architecture
 
-regular expression prepared for validation URLs'
+n/a
 
-```
-/https?://(?:www.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9].[^s]{2,}|www.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9].[^s]{2,}|https?://(?:www.|(?!www))[a-zA-Z0-9]+.[^s]{2,}|www.[a-zA-Z0-9]+.[^s]{2,}/g
-```
-
-##### The system has a 3-Tier Architecture
-
--  Presentation Tier - React with libraries:
-   -  Semantic UI
-   -  Ant Design
-   -  Nivo - charts library
--  Application Tier - nodeJS / Express
--  Data Tier- persistence layer based on a flat file: txt/JSON
-
----
 
 ### Install & spinning up
 
@@ -67,8 +53,8 @@ regular expression prepared for validation URLs'
 4. Run client
 
 ```
-$ git clone https://github.com/zkrysztofiak/LiveChat.git
-$ cd LiveChat
+$ git clone https://github.com/zkrysztofiak/CORS-proxy.git
+$ cd CORS-proxy
 $ cd API
 $ npm install
 $ nodemon server.js --ignore db.json *OR* node server.js  // run API on http://localhost:4001
