@@ -1,6 +1,6 @@
 # CORS proxy demo
 
-_URL shortener_ is a web application that allows shortening links
+CORS proxy demo - workaround CORS/options problem
 
 ---
 
