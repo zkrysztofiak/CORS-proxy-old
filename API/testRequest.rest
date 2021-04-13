@@ -1,0 +1,50 @@
+@hostname = http://localhost
+@port = 4001
+
+@host = {{hostname}}:{{port}}
+
+
+http://localhost:4001/urls?page=1&orderby=0&orderDir=&perPage=20&searchString=
+
+###
+POST {{host}}/urls HTTP/1.1
+content-type: application/json
+
+	{
+		"URL": "{{$guid}}",
+		"URLshortened":"{{$randomInt 13 222222}}",
+        "created": "{{$datetime 'YYYY-MM-DD HH:mm:ss'}}"
+	}
+###
+PATCH {{host}}/urls/26 HTTP/1.1
+content-type: application/json
+
+{
+    "URL": "10131312",
+    "URLshortened": "update Admin",
+    "created": "{{$datetime 'YYYY-MM-DD HH:mm:ss'}}"
+}
+
+###
+GET {{host}}/urls/byDateBars
+
+###
+GET {{host}}/urls
+
+###
+GET {{host}}/urls
+    ?page=1
+    &orderby=1
+    &perPage=5
+    &searchString=admin
+
+###
+GET {{host}}/urls/6
+
+###
+DELETE {{host}}/urls/54
+
+
+
+
+
