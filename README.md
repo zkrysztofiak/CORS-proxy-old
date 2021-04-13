@@ -1,4 +1,4 @@
-# LiveChat: URL shortener
+# CORS proxy demo
 
 _URL shortener_ is a web application that allows shortening links
 
