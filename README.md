@@ -10,10 +10,6 @@ CORS proxy demo - workaround CORS/options problem
 
 ##### Functional requirements
 
--  [x] System should allow entering a URL and transform it into a short, internally interpretable URL (MVP)
--  [x] System should validate the entered URL based on the agreed regular expression (MVP)
--  [x] Once you have entered the URK to the System - the system places a shortened link to the _Clipboard_ (MVP)
--  [ ] After saving, in browsing mode, the System facilitates copying the shortened URL to the _Clipboard_ by clicking on the appropriate item (2.0)
 -  [x] System should allow browsing data in the form of a table with pagination (MVP),
    -  [x] full text search and filtering and highlighting (MVP)
    -  [ ] searching/filtering individual columns (2.0)
